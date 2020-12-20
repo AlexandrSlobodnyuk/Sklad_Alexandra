@@ -62,13 +62,7 @@ plt.plot(b.trajectory_x, b.trajectory_y)
 plt.plot(Vostok.trajectory_x, Vostok.trajectory_y)
 
 
-# In[ ]:
 
-
-
-
-
-# In[ ]:
 
 
 
