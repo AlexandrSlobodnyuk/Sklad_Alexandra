@@ -46,7 +46,6 @@ class Rocket(Body):
             
 kamen = Body(0, 0, 10, 10)
 Vostok = Rocket (10, 10, 0,  0, 50)
-bodies = [kamen, Vostok]
 
 for i in np.r_[0:2:MODEL_DT]:
     kamen.advance()
