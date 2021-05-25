@@ -1,9 +1,6 @@
-<<<<<<< HEAD
-import sys  
-import os  
+import sys
+import os
 from PyQt5 import QtWidgets
-
-import design1
 
 class ExampleApp(QtWidgets.QMainWindow, design1.Ui_MainWindow):
     def print_gcd(self):
@@ -29,12 +26,8 @@ def main():
 
 if __name__ == '__main__':  
     main()  
-=======
-import sys  
-import os  
-from PyQt5 import QtWidgets
 
-import design1
+
 
 class ExampleApp(QtWidgets.QMainWindow, design1.Ui_MainWindow):
     def print_gcd(self):
@@ -60,4 +53,4 @@ def main():
 
 if __name__ == '__main__':  
     main()  
->>>>>>> e9c9f108b41f000ee7dc6c27271c2dc4a815cf0d
+
