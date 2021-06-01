@@ -18,7 +18,7 @@ def Pi_finding(accuracy):
     return(good_dots*4/accuracy)
 #print(Pi_finding(1000000))
 def test_all(pool):
-    l = pool.map(Pi_finding, [1000000] * 4)
+    l = pool.map(Pi_finding, [1000000])
     return l
 
 
