@@ -10,13 +10,16 @@ def pi_finding(accuracy):
         return False
     good_dots=0
     for i in range(accuracy):
-        if make_cords():
-            good_dots += 1
-    return (good_dots*4/accuracy)
+        good_dots+=make_cords()
+    return good_dots*4/accuracy
+
 #print(Pi_finding(1000000))
 def test_all(pool):
-    l = pool.map(pi_finding, [1000000])
-    return l
+    l = pool.map(pi_finding, [100000]*1000)
+    sum = 0
+    for pi in l:
+        sum += pi
+    return sum/1000
 
 
 if __name__ == '__main__':
