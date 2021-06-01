@@ -1,5 +1,5 @@
 import math
-#import numpy as np
+
 def exp(x):
     def factorial(n):
         r = 1
