@@ -15,11 +15,11 @@ def pi_finding(accuracy):
 
 #print(Pi_finding(1000000))
 def test_all(pool):
-    l = pool.map(pi_finding, [100000]*1000)
+    l = pool.map(pi_finding, [1000000]*4)
     sum = 0
     for pi in l:
         sum += pi
-    return sum/1000
+    return sum/4
 
 
 if __name__ == '__main__':
