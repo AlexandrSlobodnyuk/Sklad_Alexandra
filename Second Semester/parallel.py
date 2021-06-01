@@ -1,24 +1,21 @@
 import random
 import time
-import sys
 import multiprocessing
 
-
-def Pi_finding(accuracy):
+def pi_finding(accuracy):
+    g = random.Random()
     def make_cords():
-        g = random.Random()
-        return [g.random(), g.random()]
+        if g.random()**2+g.random()**2 <=1:
+            return True
+        return False
     good_dots=0
-    #t0 = time.time()
-    dots = []
     for i in range(accuracy):
-        dots.append(make_cords())
-        if dots[-1][0]**2+dots[-1][1]**2<=1:
-            good_dots+=1
-    return(good_dots*4/accuracy)
+        if make_cords():
+            good_dots += 1
+    return (good_dots*4/accuracy)
 #print(Pi_finding(1000000))
 def test_all(pool):
-    l = pool.map(Pi_finding, [1000000])
+    l = pool.map(pi_finding, [1000000])
     return l
 
 
